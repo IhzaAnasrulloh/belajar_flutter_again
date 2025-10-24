@@ -26,6 +26,14 @@ class Home extends StatelessWidget {
             appBar: AppBar(
               title: Text("Judul"),
               backgroundColor: Colors.blue,
+              actions: [
+                Icon(Icons.play_arrow),
+                SizedBox(width: 10,),
+                Icon(Icons.access_alarm),
+                SizedBox(width: 10,),
+                Icon(Icons.person),
+                SizedBox(width: 10,),
+              ],
             ),
             body: SingleChildScrollView(
               child: Container(
