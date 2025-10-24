@@ -27,7 +27,7 @@ class Home extends StatelessWidget {
               title: Text("Judul"),
               backgroundColor: Colors.blue,
               actions: [
-                Icon(Icons.play_arrow),
+                Icon(Icons.play_arrow, color: Colors.red,),
                 SizedBox(width: 10,),
                 Icon(Icons.access_alarm),
                 SizedBox(width: 10,),
@@ -35,13 +35,15 @@ class Home extends StatelessWidget {
                 SizedBox(width: 10,),
               ],
             ),
-            body: SingleChildScrollView(
-              child: Container(
-                padding: const EdgeInsets.all(20.0),
-                child: const Column(
-                  children: [],
-                ),
-              ),
+            body: Container(
+              alignment: Alignment.center,
+              color: Colors.red,
+              child: Row(children : 
+                    [Text("Ini Adalah Text Dalam Kontainer", 
+                        style: TextStyle(fontSize: 20,
+                        color: Colors.white, 
+                        fontWeight: FontWeight.bold,
+                        fontStyle: FontStyle.italic,),)],), //Text("Ini Adalaah Text Dalam Kontainer", style: TextStyle(fontSize: 20,),
             ),
           );
   }
